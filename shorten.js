@@ -11,8 +11,6 @@ module.exports = function (url, limit) {
         host = m[2],
         tail = m[3];
 
-    if (tail === "" || tail === "/") return proto + host;
-
     var re = /[\/?&#_-]/g,
         prevPos = -1,
         parts = [];
